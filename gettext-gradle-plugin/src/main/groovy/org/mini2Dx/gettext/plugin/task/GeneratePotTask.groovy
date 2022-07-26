@@ -34,30 +34,30 @@ class GeneratePotTask extends DefaultTask {
     public static final String DEFAULT_FORCE_EXTRACT_FORMAT = "#!extract";
 
     @InputDirectory
-    public String srcDir;
+    String srcDir;
     @Input
     @Optional
-    public String include;
+    String include;
     @Input
     @Optional
-    public String[] includes;
+    String[] includes;
     @Input
     @Optional
-    public String exclude;
+    String exclude;
     @Input
     @Optional
-    public String[] excludes;
+    String[] excludes;
     @Input
     @Optional
-    public String commentFormat = "#.";
+    String commentFormat = "#.";
     @Input
     @Optional
-    public String forceExtractFormat = "#!extract";
+    String forceExtractFormat = "#!extract";
     @Input
     @Optional
-    public String ignoreFormat = "#!ignore";
+    String ignoreFormat = "#!ignore";
     @OutputFile
-    public File outputFile;
+    File outputFile;
 
     @TaskAction
     public void run() throws IOException {
