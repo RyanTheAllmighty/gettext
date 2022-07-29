@@ -69,6 +69,9 @@ public class TranslationContext {
 		if(entry.getStrings().isEmpty()) {
 			return sourceText;
 		}
+		if(entry.getStrings().get(0).isEmpty()) {
+			return sourceText;
+		}
 		return entry.getStrings().get(0);
 	}
 }
